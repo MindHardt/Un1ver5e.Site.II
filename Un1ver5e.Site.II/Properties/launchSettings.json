@@ -1,0 +1,47 @@
+{
+  "profiles": {
+    "http": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "http://localhost:5054"
+    },
+    "https": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "Authentication__Google__ClientId": "762708099815-cho6r46ftmil6ulfejm42fu1da36a52m.apps.googleusercontent.com",
+        "Authentication__Google__ClientSecret": "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",
+        "ConnectionStrings__DefaultConnection": "User ID=postgres;Password=Un1ver5e.Site.II;Host=un1ver5e.keenetic.link;Database=postgres;"
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "https://localhost:7211;http://localhost:5054"
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchBrowser": true,
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "publishAllPorts": true,
+      "useSSL": true
+    }
+  },
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:40959",
+      "sslPort": 44364
+    }
+  }
+}
