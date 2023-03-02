@@ -29,6 +29,7 @@ public class Startup
 		services.AddDatabaseDeveloperPageExceptionFilter();
 		services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = /*true*/ false)
 			.AddEntityFrameworkStores<ApplicationDbContext>();
+
 		services.AddRazorPages();
 		services.AddServerSideBlazor();
 		services.AddScoped<AuthenticationStateProvider, RevalidatingIdentityAuthenticationStateProvider<IdentityUser>>();
@@ -41,8 +42,7 @@ public class Startup
 				_cfg.GetSection("Authentication:Google");
 
 				options.ClientId = googleCfg["ClientId"]!;
-				options.ClientSecret = googleCfg["ClientSecret"]!;
-				options.CallbackPath = "/signin-google";
+				options.ClientSecret = googleCfg["ClientSecret"]!;	
 			});
 	}
 

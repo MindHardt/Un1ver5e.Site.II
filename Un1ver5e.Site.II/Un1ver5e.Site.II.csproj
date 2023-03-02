@@ -27,6 +27,11 @@
 
   <ItemGroup>
     <Folder Include="Data\Migrations\" />
+    <Folder Include="Shared\CharGen\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ArkLens\ArkLens\ArkLens.csproj" />
   </ItemGroup>
 
 </Project>
